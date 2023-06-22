@@ -1,1 +1,1 @@
-Foo on master
+foo text
