@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Environment (it should be private change) '
+                sh 'printenv'
             }
         }
         stage('Test') {
