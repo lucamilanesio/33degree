@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Environment: '
+                sh 'printenv'
             }
         }
         stage('Test') {
