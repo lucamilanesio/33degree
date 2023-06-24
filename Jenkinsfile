@@ -4,12 +4,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Environment (it should be private and WIP change) '
+                sh 'printenv'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'Testing again ..'
             }
         }
         stage('Deploy') {
