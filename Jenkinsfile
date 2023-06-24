@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label 'bazel-chrome-latest'}
 
     stages {
         stage('Build') {
